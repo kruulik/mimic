@@ -35,3 +35,10 @@ Challenge another player or __face__ the computer! Here's how it works:
 **Day 3** Gamaify! Set up turn-based logic and comparison of scores and prompts / errors. Objectives:
 - Game should store previous player's scores
 - Game should be able to return a boolean indicating whether second player beat first player.
+
+### Technologies
+
+- Javascript
+- Kairos API
+- WebRTC
+- LocalStorage
