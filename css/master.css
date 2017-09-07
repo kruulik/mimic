@@ -1,0 +1,15 @@
+video {
+display: none;
+}
+
+/*canvas {
+  height: 400px;
+  width: 300px;
+  background-color: lightgray;
+}*/
+
+#game-root {
+  height: 640px;
+  width: 480px;
+  border: 1px solid gray;
+}

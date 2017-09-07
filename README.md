@@ -7,6 +7,12 @@ mimic is an in-browser game built using Kairos facial recognition API, used for 
 
 Challenge another player or __face__ the computer! Here's how it works:  
 
+### PvC
+1. A portrait is presented to the screen
+2. The user must try to match the emotion they perceive in the image
+
+(Bonus?) Images are stored until the end of the game; at the end, the players are given the option to send themselves an email with the images attached.
+
 ### PvP
 1. mimic pics a basic emotion and displays it to the screen to start the game.
 2. player 1 makes a facial expression, attempting to represent the given 'emotion', and captures it using their built-in webcam.
@@ -14,16 +20,14 @@ Challenge another player or __face__ the computer! Here's how it works:
 4. player 2 attempts to match the same expression.
 5. The player with the lower score gets gets a letter ('m', 'i', 'm', 'i', 'c'), while the other is allowed to make a new face/expression and restart the round.
 
-### PvC
-1. A portrait is presented to the screen
-2. The user must try to match the emotion they perceive in the image
 
-(Bonus?) Images are stored until the end of the game; at the end, the players are given the option to send themselves an email with the images attached.
 
 
 ### Implementation Timeline
 
-**Day 1**: Set up all necessary dependencies and gather a collection of images for testing. Learn how to capture camera events in the browser.  Objectives:
+**NO LONGER PRIORITIZING PVP**
+
+**Day 1**: Set up all necessary dependencies and gather a collection of images for testing. Learn how to capture camera events in the browser. Objectives:
 - Be able to render a live image to the screen, using built-in webcam
 
 **Day 2**: Learn Kairos API. Objectives:
@@ -42,3 +46,4 @@ Challenge another player or __face__ the computer! Here's how it works:
 - Kairos API
 - WebRTC
 - LocalStorage
+- Canvas
