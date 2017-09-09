@@ -1,15 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+}
+
 video {
 display: none;
 }
 
-/*canvas {
-  height: 400px;
-  width: 300px;
+canvas {
+  height: 100%;
   background-color: lightgray;
-}*/
+  flex-shrink: 0;
+}
 
 #game-root {
   height: 640px;
   width: 480px;
-  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: lightgray;
+}
+
+#results{
+  display: none;
+  width: 200px;
+  height: 640px;
+  border: 1px solid lightgray;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

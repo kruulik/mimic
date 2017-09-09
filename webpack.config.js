@@ -1,8 +1,8 @@
 module.exports = {
-  entry: "./lib/main.js",
+  entry: "./lib/mimic.js",
   output: {
     path: __dirname,
-    filename: "./lib/mimic.js"
+    filename: "./lib/bundle.js"
   },
   devtool: "source-map"
 };
