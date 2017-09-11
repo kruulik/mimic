@@ -7,16 +7,26 @@
   <link rel="stylesheet" href="./css/master.css">
   <script type="text/javascript" src="./lib/bundle.js"></script>
   <script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
 </head>
 
 <body>
 
-  <div id="game-root"></div>
+  <div id="game-wrapper">
+    <div class="header">
+      <span class="score">Score: 0</span>
+      <span class="high-score">High Score: 0</span>
+    </div>
+    <div id="game-root">
+      <canvas id="ui_canvas" width="480" height="640"></canvas>
+    </div>
+  </div>
   <!-- <div id="results"></div> -->
 
 </body>
 <footer>
   <button type="button" id="toggleButton">Start/ Stop</button>
+  <button type="button" id="makeEmoji">make emoji</button>
 </footer>
 
 </html>
