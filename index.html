@@ -11,16 +11,34 @@
 </head>
 
 <body>
-  <h1>mimic</h1>
+
+  <div id="demo-modal" type="hidden">
+    <div class="container">
+      <span></span>
+      <video src="demo.gif" autoplay poster="demoposter.jpg"></video>
+    </div>
+
+  </div>
   <div id="game-wrapper">
-    <div class="start-screen"></div>
+    <h1>mimic</h1>
+    <div class="start-screen">
+      <h2>mimic</h2>
+      <br>
+      <br>
+      <span class='intro-strong'><p>This game uses the <a href="https://www.affectiva.com/">Affectiva </a>emotional recognition software to detect facial expressions.</p></span>
+      <br>
+      <p>In order to play you must use your webcam! <a href="#">Demo</a> </p>
+      <p><strong>How to play: </strong><br>
+        Emoji will start to fall from the top of the screen. Try to match as many emoji as you can before time runs out. Match them by mimicing the expression with your face! <p><strong>Tip: </strong>Turn your monitor brightness up and make sure there is ample light in the room.
+      </p>
+      <button type="button" id="toggleButton" class="button">Start</button>
+    </div>
     <div class="status">
       <span class="score"></span>
       <span class="lives"></span>
     </div>
     <div id="game-root">
-      Loading (9mb)...
-      <canvas id="ui_canvas" width="480" height="640"></canvas>
+      <canvas id="ui_canvas" width="480" height="640">Loading...</canvas>
     </div>
   </div>
   <div class="temp"></div>
@@ -29,10 +47,9 @@
     <span><h6><a href="https://github.com/kruulik/mimic">Github</a></h6></span>
     <span><h6><a href="mailto:karoliskrulis@gmail.com">Contact</a></h6></span>
   </div>
-
 </body>
 <footer>
-  <button type="button" id="toggleButton">Start/ Stop</button>
+
 </footer>
 
 </html>
