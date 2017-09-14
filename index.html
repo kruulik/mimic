@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>mimic</title>
   <link rel="stylesheet" href="./css/master.css">
-  <script type="text/javascript" src="./lib/bundle.js"></script>
   <script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+  <script type="text/javascript" src="./lib/bundle.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
 </head>
 
@@ -21,10 +21,9 @@
   </div>
   <div id="game-wrapper">
     <h1>mimic</h1>
-    <div class="start-screen">
+    <div class="info-screen start">
       <h2>mimic</h2>
-      <br>
-      <br>
+
       <span class='intro-strong'><p>This game uses the <a href="https://www.affectiva.com/">Affectiva </a>emotional recognition software to detect facial expressions.</p></span>
       <br>
       <p>In order to play you must use your webcam! <a href="#">Demo</a> </p>
@@ -33,8 +32,19 @@
       </p>
       <button type="button" id="toggleButton" class="button">Start</button>
     </div>
+    <div class="info-screen end hidden">
+      <h2>game over</h2>
+      <br>
+      <p><strong>Final </strong><strong class="score"></strong></p>
+      <div class="links">
+        <span><h5><a href="https://github.com/kruulik/mimic">Other Projects</a></h5></span>
+        <span><h5><a href="mailto:karoliskrulis@gmail.com">Get in Touch</a></h5></span>
+      </div>
+      <button type="button" id="toggleButton" class="button">Start</button>
+    </div>
+
     <div class="status">
-      <span class="score"></span>
+      <p><strong class="score"></strong></p>
       <span class="lives"></span>
     </div>
     <div id="game-root">
