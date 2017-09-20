@@ -21,7 +21,6 @@ h1 {
   margin: 0 0 -23px -6px;
   font-size: 90px;
   bottom: 0;
-  position: absolute;
   left: 0;
   top: -55px;
   opacity: 0.8;
@@ -149,6 +148,16 @@ footer {
 
 .info-screen .links span {
   margin-right: 20px;
+}
+
+.loading {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 640px;
+  width: 100%;
+  align-items: center;
+  z-index: 1;
 }
 
 .hidden {
