@@ -12,13 +12,12 @@
 
 <body>
 
-  <div id="demo-modal" type="hidden">
-    <div class="container">
-      <span></span>
-      <video src="demo.gif" autoplay poster="demoposter.jpg"></video>
+  <div id="demo-modal" class="hidden">
+    <div class="modal-container">
+      <video class="demo-video" src="./assets/video/demo1.mov" poster="./assets/video/demoposter.png"></video>
     </div>
-
   </div>
+
   <div id="game-wrapper">
     <h1>mimic</h1>
     <div class="info-screen start">
@@ -26,7 +25,7 @@
 
       <span class='intro-strong'><p>This game uses the <a href="https://www.affectiva.com/">Affectiva </a>emotional recognition software to detect facial expressions.</p></span>
       <br>
-      <p>In order to play you must use your webcam! <a href="#">Demo</a> </p>
+      <p>In order to play you must use your webcam! <a class="open-modal" href="#">Demo</a> </p>
       <p><strong>How to play: </strong><br>
         Emoji will start falling from the top of the screen. Try to match as many emoji as you can before time runs out. Match them by mimicing the expression with your face! <p><strong>Tip: </strong>Turn your monitor brightness up and make sure there is ample light in the room. Exaggerate and hold expressions for at least 1 second.
       </p>

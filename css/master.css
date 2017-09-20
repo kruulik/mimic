@@ -181,3 +181,29 @@ footer {
   height: 20px;
   background: #836d95;
 }
+
+#demo-modal{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-container{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#demo-modal video {
+  height: 75vh;
+  width: auto;
+  display: block;
+}
