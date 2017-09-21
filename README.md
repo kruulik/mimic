@@ -3,47 +3,21 @@
 **make a face.**
 
 
-mimic is an in-browser game built using Kairos facial recognition API, used for analyzing features and judging emotion from expression. The game closely resembles 'horse'.
-
-Challenge another player or __face__ the computer! Here's how it works:  
-
-### PvC
-1. A portrait is presented to the screen
-2. The user must try to match the emotion they perceive in the image
-
-(Bonus?) Images are stored until the end of the game; at the end, the players are given the option to send themselves an email with the images attached.
-
-### PvP
-1. mimic pics a basic emotion and displays it to the screen to start the game.
-2. player 1 makes a facial expression, attempting to represent the given 'emotion', and captures it using their built-in webcam.
-3. Kairos API analyzes the emotions it sees in the image and returns a graphically represented accuracy score.
-4. player 2 attempts to match the same expression.
-5. The player with the lower score gets gets a letter ('m', 'i', 'm', 'i', 'c'), while the other is allowed to make a new face/expression and restart the round.
+mimic is an in-browser game built using Affectiva facial recognition SDK.
 
 
+## How to play:
 
+Press start, and __allow webcam access__.
+Emoji will start falling from the top of the screen.
+Try to make a face that matches that emoji as closely as possible.
+Match as many as you can before time runs out.
+The more you get in a row, the higher the score multiplier.
 
-### Implementation Timeline
+## Technical specs
 
-**NO LONGER PRIORITIZING PVP**
+Affectiva provides an incredibly powerful facial recognition tool that is able to detect various facial landmarks, which it uses to gauge expression and recognize emotion. It also provides an SDK which is loaded onto the local machine, crucial to providing the low latency needed for this game.
 
-**Day 1**: Set up all necessary dependencies and gather a collection of images for testing. Learn how to capture camera events in the browser. Objectives:
-- Be able to render a live image to the screen, using built-in webcam
+The game uses two canvases; one for the detector and webcam video, and another for the UI and falling emoji. When initialized, the detector creates a video and canvas element of its own, hiding the video element and feeding it to the visible canvas element. This is done so that facial landmarks can be painted on the canvas directly.
 
-**Day 2**: Learn Kairos API. Objectives:
-- Successfully make an API call to Kairos
-- Successfully receive and print digested data, at least to console.
-- Create UI (minimal/no styling) to represent data.
-- Create a button to first capture an image, then send the API request, then receive & display the data.
-
-**Day 3** Gamaify! Set up turn-based logic and comparison of scores and prompts / errors. Objectives:
-- Game should store previous player's scores
-- Game should be able to return a boolean indicating whether second player beat first player.
-
-### Technologies
-
-- Javascript
-- Kairos API
-- WebRTC
-- LocalStorage
-- Canvas
+## Diagram of callbacks
