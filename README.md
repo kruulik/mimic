@@ -23,5 +23,5 @@ The game uses two canvases; one for the detector and webcam video, and another f
 ## Diagram of callbacks
 
 <p align="center">
-<img src ="mimic/assets/Untitled Diagram.xml">
+<img src = "/assets/diagram.xml">
 </p>
