@@ -22,4 +22,4 @@ The game uses two canvases; one for the detector and webcam video, and another f
 
 ## Diagram of callbacks
 
-![diagram][mimic/assets/diagram.png]
+![diagram](mimic/assets/diagram.png)
