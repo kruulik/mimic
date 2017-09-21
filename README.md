@@ -21,3 +21,7 @@ Affectiva provides an incredibly powerful facial recognition tool that is able t
 The game uses two canvases; one for the detector and webcam video, and another for the UI and falling emoji. When initialized, the detector creates a video and canvas element of its own, hiding the video element and feeding it to the visible canvas element. This is done so that facial landmarks can be painted on the canvas directly.
 
 ## Diagram of callbacks
+
+<p align="center">
+<img src ="mimic/assets/Untitled Diagram.xml">
+</p>
