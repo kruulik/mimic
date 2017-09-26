@@ -5,6 +5,10 @@
 
 mimic is an in-browser game built using Affectiva facial recognition SDK.
 
+[Live][mimic] 
+
+[mimic]: https://kruulik.github.io/mimic/
+
 
 ## How to play:
 
