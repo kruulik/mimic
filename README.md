@@ -29,4 +29,3 @@ The game uses two canvases; one for the detector and webcam video, and another f
 ### Diagram of callbacks
 
 ![diagram](https://github.com/kruulik/mimic/blob/master/assets/diagram.png)
-![demo](https://github.com/kruulik/mimic/blob/master/assets/video/demo1_small.mp4)
